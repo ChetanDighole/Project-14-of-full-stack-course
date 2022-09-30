@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.mainImg {
+    height: 99.5vh;
+}
+
+.container>.containerRight {
+    flex-grow: 2;
+    align-self: flex-start;
+    width: 50vw;
+    padding-top: 40px;
+    padding-right: 60px;
+}
+
+.nav {
+    height: 10vh;
+}
+
+.nav>ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    font-family: sans-serif;
+
+}
+
+.nav>ul::before {
+    content: " ";
+    background-color: black;
+    width: 30%;
+    height: 2px;
+}
+
+.containerRight {
+    padding-left: 30px;
+}
+
+.container2Left {
+    font-family: 'Merriweather';
+}
+
+.text1 {
+    font-size: 7rem;
+    -webkit-text-stroke: 3px #979796;
+    -webkit-text-fill-color: transparent;
+}
+
+.text2 {
+    padding-left: 150px;
+    font-size: 7rem;
+    color: #333333;
+}
+
+.container2Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 3rem;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container2Left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.left2 {
+    padding-left: 15px;
+    font-size: 25px;
+    line-height: 1;
+    color: #979796;
+}
+
+.check {
+    margin-top: 10px;
+    padding: 15px 40px;
+    color: #fff;
+    background-color: #333333;
+    font-size: 22px;
+    float: right;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.check:hover {
+    background-color: #292929;
+}
+
+.dq {
+    width: 50px;
+    height: 50px;
+}
+
+.arrow {
+    height: 160px;
+}
+
+.desImg {
+    width: 430px;
+    height: 215px;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.bottomList {
+    font-size: 25px;
+    padding: 10px 0px;
+    color: #979796;
+    list-style-type: disc;
+
+}
+
+.list>ul::before {
+    content: " ";
+    background-color: #979796;
+    width: 2px;
+    height: 245px;
+    position: absolute;
+    right: 60.6%;
+    top: 70%;
+}
+
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.container2Right img {
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navList {
+    cursor: pointer;
+    color: #979796;
+}
+
+.activee {
+    color: #333333;
+}
+
+
+@media screen and (max-width:1200px){
+    .nav{
+        display: none;
+    }
+}
