@@ -83,12 +83,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .container2Left {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .left2 {
@@ -134,6 +136,7 @@
     align-items: flex-end;
     width: 100%;
     padding-left: 30px;
+    flex-wrap: wrap;
 }
 
 .bottomList {
@@ -167,6 +170,17 @@
     cursor: pointer;
 }
 
+@media (max-width:1200px) {
+    .container2Right {
+        display: flex;
+        flex-direction: row;
+    }
+    .list>ul::before {
+        display: none;
+    }
+}
+
+
 .logo {
     cursor: pointer;
 }
@@ -181,8 +195,16 @@
 }
 
 
-@media screen and (max-width:1200px){
-    .nav{
+@media screen and (max-width:1200px) {
+    .nav {
         display: none;
     }
+
+    .containerLeft {
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+
 }
